@@ -2,8 +2,28 @@
 
 :root {
   font-family: "Poppins", sans-serif;
-  
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0a0a0a;
 
+  --base-color: #eeeeee;
+  --base-variant: #e3e3e3;
+  --primary-text: #0e0d0e;
+  --secondary-text: #353238;
+  --accent-color: #365e32;
+}
+
+.darkmode{
+  --base-color: #0e0d0e;
+  --base-variant: #1b191c;
+  --primary-text: #eeeeee;
+  --secondary-text: #d7d7d8;
+  --accent-color: #365e32;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--base-color);
+  color: var(--primary-text);
 }
