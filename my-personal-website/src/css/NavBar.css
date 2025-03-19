@@ -1,76 +1,7 @@
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 50px;
-}
-
-.navbar-name{
-    font-size: 40px;
-    font-weight: 500;
-    padding: 5px 10px;
-    cursor: default;
-    user-select: none;
-}
-
-.navbar-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.navbar-links li{
-    list-style-type: none;
-    padding: 5px 10px;
-    border-radius: 50px;
-}
-
-.navbar-links li:nth-child(-n + 3):hover{
-    background: var(--base-variant);
-    cursor: pointer;
-}
-
-#color-mode-toggle{
-    height: 40px;
-    width: 40px;
-    background-color: var(--base-color);
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#color-mode-toggle:hover{
-    background-color: var(--base-variant);
-    cursor: pointer;
-}
-
-#color-mode-toggle svg{
-    fill: var(--primary-text);
-}
-
-#color-mode-toggle svg:last-child{
-    display: none;
-}
-
 .darkmode #color-mode-toggle svg:first-child{
     display: none;
 }
 
 .darkmode #color-mode-toggle svg:last-child{
     display: block;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-radius: 10%;
-    border-top: 1px solid var(--primary-text);
-    margin: 0.5vh 0;
-    padding: 0;
 }
