@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --base-color: #0e0d0e;
+  --base-variant: #1b191c;
+  --primary-text: #eeeeee;
+  --secondary-text: #d7d7d8;
+  --accent-color: #4635b1;
+}
+
+.lightmode{
+  --base-color: #eeeeee;
+  --base-variant: #e3e3e3;
+  --primary-text: #0e0d0e;
+  --secondary-text: #353238;
+  --accent-color: #4635b1;
+}
+
+body{
+  background-color: var(--base-color);
+  color: var(--primary-text);
+  font-family: Poppins;
+}

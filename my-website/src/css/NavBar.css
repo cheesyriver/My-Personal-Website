@@ -1,7 +1,0 @@
-.darkmode #color-mode-toggle svg:first-child{
-    display: none;
-}
-
-.darkmode #color-mode-toggle svg:last-child{
-    display: block;
-}
