@@ -2,7 +2,9 @@
 
 :root {
   font-family: "Poppins", sans-serif;
+}
 
+.darkmode{
   --base-color: #0e0d0e;
   --base-variant: #1b191c;
   --primary-text: #eeeeee;

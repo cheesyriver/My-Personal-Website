@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import NavBar from "./components/NavBar";
 import Background from "./components/Background";
+import { ThemeProvider } from "./providers/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +33,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={poppinsSans.className}>
-        <Background />
-        <NavBar />
-        {children}
+        <ThemeProvider
+          attribute='class'
+          defaultTheme="darkmode"
+          themes={["darkmode", "lightmode"]}
+        >
+          <Background />
+          <NavBar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
