@@ -9,7 +9,9 @@
   --base-variant: #1b191c;
   --primary-text: #eeeeee;
   --secondary-text: #d7d7d8;
-  --accent-color: #4635b1;
+  --accent-color: #4e56c0;
+  --opaque-color: #ffffff33;
+  --border-color: #ffffff0d;
 }
 
 .lightmode{
@@ -17,7 +19,9 @@
   --base-variant: #e3e3e3;
   --primary-text: #0e0d0e;
   --secondary-text: #353238;
-  --accent-color: #4635b1;
+  --accent-color: #4e56c0;
+  --opaque-color: #0000001a;
+  --border-color: #0000000d;
 }
 
 body{
